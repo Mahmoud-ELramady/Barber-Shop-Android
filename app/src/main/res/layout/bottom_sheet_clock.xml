@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <LinearLayout
+            android:id="@+id/layout_bottom_sheet_days_groub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sheet_day1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/purple_500"
+                app:strokeWidth="2dp"
+                android:text="Saturday"
+                android:textColor="@color/bottom_sheet_text_color"
+                android:textSize="14dp"
+                app:cornerRadius="16dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="OnClickButtonDays"
+                android:padding="10dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sheet_day2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/purple_500"
+                app:strokeWidth="2dp"
+                android:text="Sunday"
+                android:textColor="@color/bottom_sheet_text_color"
+                android:textSize="14dp"
+                app:cornerRadius="16dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="OnClickButtonDays"
+
+                android:padding="10dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sheet_day3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/purple_500"
+                app:strokeWidth="2dp"
+                android:text="Monday"
+                android:textColor="@color/bottom_sheet_text_color"
+                android:textSize="14dp"
+                app:cornerRadius="16dp"
+                android:layout_weight="1"
+                android:onClick="OnClickButtonDays"
+
+                android:textAllCaps="false"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_bottom_sheet_days_groub2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintTop_toBottomOf="@id/layout_bottom_sheet_days_groub1"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sheet_day4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/purple_500"
+                app:strokeWidth="2dp"
+                android:text="Tuesday"
+                android:textColor="@color/bottom_sheet_text_color"
+                android:textSize="14dp"
+                app:cornerRadius="16dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="OnClickButtonDays"
+
+                android:padding="10dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sheet_day5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/purple_500"
+                app:strokeWidth="2dp"
+                android:text="Wednesday"
+                android:textColor="@color/bottom_sheet_text_color"
+                android:textSize="14dp"
+                app:cornerRadius="16dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="OnClickButtonDays"
+
+                android:padding="10dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sheet_day6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/purple_500"
+                app:strokeWidth="2dp"
+                android:text="Thursday"
+                android:textColor="@color/bottom_sheet_text_color"
+                android:textSize="14dp"
+                app:cornerRadius="16dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="OnClickButtonDays"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layout_bottom_sheet_days_groub2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:weightSum="3"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sheet_day7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/purple_500"
+                app:strokeWidth="2dp"
+                android:text="Friday"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/bottom_sheet_text_color"
+                android:textSize="14dp"
+                app:cornerRadius="16dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="OnClickButtonDays"
+                android:padding="10dp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

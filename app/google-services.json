@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "600338658759",
+    "firebase_url": "https://barberapp-3845f-default-rtdb.firebaseio.com",
+    "project_id": "barberapp-3845f",
+    "storage_bucket": "barberapp-3845f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600338658759:android:182437ca1de1bbd43e15e2",
+        "android_client_info": {
+          "package_name": "com.elramady.barberapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600338658759-sveg8digroo01c2b3tl7dsim6t3a7068.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elramady.barberapp",
+            "certificate_hash": "9f61861f13786ffc031e0c2da544f39b86d232b6"
+          }
+        },
+        {
+          "client_id": "600338658759-c1uu3qhjlbap3gok8m1n8kktat23t8tl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3Mznm-5ap6YrwwvpiInPLggs98wvlsbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600338658759-c1uu3qhjlbap3gok8m1n8kktat23t8tl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

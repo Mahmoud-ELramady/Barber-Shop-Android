@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/service_bottom_sheet_edly"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:hint="Service"
+            android:textColorHint="#80000000"
+            app:startIconDrawable="@drawable/icon_service"
+            app:errorIconDrawable="@drawable/icon_error"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@null"
+            app:errorEnabled="true"
+            android:background="@null"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/service_bottom_sheet_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:inputType="textPersonName"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/service_price_bottom_sheet_edly"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/service_bottom_sheet_edly"
+            android:hint="Price"
+            android:textColorHint="#80000000"
+            app:startIconDrawable="@drawable/icon_price"
+            app:errorIconDrawable="@drawable/icon_error"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@null"
+            app:errorEnabled="true"
+            android:background="@null"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/service_price_sheet_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:inputType="textPersonName"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:backgroundTint="@color/purple_500"
+            android:text="Add Service"
+            android:textColor="#EAE0E0"
+            android:textSize="18dp"
+            app:cornerRadius="16dp"
+            android:textAllCaps="false"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/service_price_bottom_sheet_edly"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

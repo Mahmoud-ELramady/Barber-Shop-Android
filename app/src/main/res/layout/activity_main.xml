@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/mbn_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mbn_circleColor="@color/purple_500"
+        app:mbn_countBackgroundColor="#ff6f00"
+        app:mbn_countTextColor="@color/black"
+        app:mbn_defaultIconColor="@color/purple_500"
+        app:mbn_rippleColor="@color/black"
+        app:mbn_selectedIconColor="@color/white"
+        app:mbn_shadowColor="#1F171616"
+        tools:ignore="MissingClass" />
+
+</LinearLayout>
